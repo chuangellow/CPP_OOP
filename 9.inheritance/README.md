@@ -160,3 +160,47 @@ int main(void) {
 
 在 C++ 中，一個 derived class 可以同時繼承多個 base class 的 member，語法如下所示：
 
+```
+class Son: public Mom, public Dad {...}
+```
+
+下面為一個例子：
+
+```
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Dad {
+	protected:
+		string name;
+	public:
+		Dad(string n) : name(n) {}
+		void print() { cout << name << endl; }
+		void dad_call_son() { cout << "Son! I'm your dad!" << endl; }
+};
+
+class Mom {
+	protected:
+		string name;
+	public:
+		Mom(string n) : name(n) {}
+		void print() { cout << name << endl; }
+		void mom_call_son() { cout << "Son! I'm your mom!" << endl; }
+};
+
+class Son: public Dad, public Mom {
+	public:
+		Son(string n) : Dad(n), Mom(n) {}
+};
+
+int main(void) {
+	Son son("John");
+	son.dad_call_son();
+	son.mom_call_son();
+	return 0;
+}
+```
+
+可以看到 ```Son``` 同時繼承了 ```Mom``` 和 ```Dad``` 的 member function。
