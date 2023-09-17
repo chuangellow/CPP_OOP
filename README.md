@@ -11,3 +11,4 @@
 - [7. Static Members](./7.static_members/README.md)
 - [8. Friend Function and Friend Class](./8.friend/README.md)
 - [9. Inheritance](./9.inheritance/README.md)
+- [10. Pointer to Base Class](./10.pointer_to_base_class/README.md)
