@@ -1,6 +1,6 @@
-# C++ Object-Oriented Programming
+# Object-Oriented Programming and Design Pattern
 
-This repository provides tutorials and examples to cover the concepts of Object-Oriented Programming (OOP) in C++. Each directory contains a specific topic and its related files.
+This repository provides tutorials and examples to cover the concepts of Object-Oriented Programming (OOP) in C++ and the concepts of design pattern. Each directory contains a specific topic and its related files.
 
 ## Table of Contents
 
